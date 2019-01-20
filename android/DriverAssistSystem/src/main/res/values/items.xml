@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinner1">
+        <item>No diseases(질병없음)</item> // 정상 심박수 : 50-100(노인 :50-80) // 정상호흡수 : 12-20
+        <item>Myocardial infarction(심근경색)</item> // 20 높이기..
+        <item>High blood pressure(고혈압)</item> // 10 높이기
+        <item>Low blood pressure(저혈압)</item> // 10 낮추기
+        <item>Pneumonia(폐렴)</item> //정상 : 12-20 // 폐렴 : 25회 이상  - 5씩 높이기.
+    </string-array>
+    <string-array name="spinner2">
+        <item>Family</item>
+        <item>Friend</item>
+        <item>119</item>
+        <item>Doctor</item>
+        <item>Others</item>
+    </string-array>
+</resources>

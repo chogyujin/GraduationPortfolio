@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    tools:context="com.DriverAssistSystem.main.MainActivity">
+
+
+    <com.romainpiel.shimmer.ShimmerTextView
+        android:id="@+id/shimmer_tv"
+        android:text="Guardian  Of  Driver"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:layout_marginTop="50dp"
+        android:textColor="#aaa"
+        android:textSize="37sp"
+        android:gravity="center"
+        style="@style/MyTextView"/>
+
+    <TextView
+        android:id="@+id/userID"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Welcome"
+        android:textSize="15sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1.4"
+        android:layout_marginTop="80dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/showingBtn"
+            android:enabled="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="0.15"
+            android:background="@drawable/back"
+            android:drawableTop="@drawable/driver"
+            android:gravity="bottom|center"
+            android:text="State"
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:id="@+id/settingBtn"
+            android:enabled="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="40dp"
+            android:layout_weight="0.15"
+            android:background="@drawable/back"
+            android:drawableTop="@drawable/car_repair"
+            android:gravity="bottom|center"
+            android:text="Settings"
+            android:textColor="#ffffff"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="3"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/back"
+            android:text="Login"
+            android:textColor="#ffffff"
+            android:textSize="20dp"/>
+
+        <Button
+            android:id="@+id/signUpBtn"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/back"
+            android:text="Sign Up"
+            android:textColor="#ffffff"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+</LinearLayout>

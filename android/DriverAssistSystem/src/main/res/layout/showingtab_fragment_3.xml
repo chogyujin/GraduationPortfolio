@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:circular="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3d3d3d"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".main.MainActivity">
+
+    <TextView
+        android:id="@+id/showingTitle3"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="0.5"
+        android:background="#3d3d3d"
+        android:gravity="center"
+        android:text="In-Car State"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center"
+            android:text="manual/auto  " />
+
+        <Switch
+            android:id="@+id/switch2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center"
+            android:text="fan off/on  " />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_gravity="center"
+        android:layout_weight="8"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60px"
+                android:layout_height="wrap_content"
+                android:src="@drawable/thermometer" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="temperature" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/FrameLayout01"
+                android:layout_width="170dip"
+                android:layout_height="170dip"
+                android:layout_gravity="center">
+
+                <com.DriverAssistSystem.CircularProgressBar
+                    android:id="@+id/circularprogressbar1"
+                    style="@style/Widget.ProgressBar.Holo.CircularProgressBar"
+                    android:layout_width="168dip"
+                    android:layout_height="168dip"
+                    android:layout_gravity="center"
+                    circular:cpb_subtitle="Current temperature"
+                    circular:cpb_title="Title" />
+                <com.DriverAssistSystem.CircularProgressBar
+                    android:id="@+id/circularprogressbar2"
+                    style="@style/Widget.ProgressBar.Holo.CircularProgressBar"
+                    android:layout_width="158dip"
+                    android:layout_height="158dip"
+                    android:layout_gravity="center" />
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:text="Desired humidity"
+                    android:textSize="18dp" />
+
+
+                <com.DriverAssistSystem.clicknumberpicker.ClickNumberPickerView
+                    android:id="@+id/temp_picker"
+                    android:layout_width="match_parent"
+                    android:layout_height="31dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    app:decimal_number="0"
+                    app:max_value="40"
+                    app:min_value="15"
+                    app:picker_corner_radius="10"
+                    app:pickers_background_color="#757575"
+                    app:swipe_enabled="false"
+                    app:value="25"
+                    app:value_background_color="#494949"
+                    app:value_text_color="@android:color/white" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60px"
+                android:layout_height="match_parent"
+                android:src="@drawable/humidity" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="humidity" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="4"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/FrameLayout02"
+                android:layout_width="170dip"
+                android:layout_height="170dip"
+                android:layout_gravity="center">
+
+                <com.DriverAssistSystem.CircularProgressBar
+                    android:id="@+id/circularprogressbar3"
+                    style="@style/Widget.ProgressBar.Holo.CircularProgressBar"
+                    android:layout_width="168dip"
+                    android:layout_height="168dip"
+                    android:layout_gravity="center"
+                    circular:cpb_subtitle="Current humidity"
+                    circular:cpb_title="Title" />
+                <com.DriverAssistSystem.CircularProgressBar
+                    android:id="@+id/circularprogressbar4"
+                    style="@style/Widget.ProgressBar.Holo.CircularProgressBar"
+                    android:layout_width="158dip"
+                    android:layout_height="158dip"
+                    android:layout_gravity="center" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:text="Desired humidity"
+                    android:textSize="18dp" />
+
+                <com.DriverAssistSystem.clicknumberpicker.ClickNumberPickerView
+                    android:id="@+id/hum_picker"
+                    android:layout_width="match_parent"
+                    android:layout_height="31dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    app:decimal_number="0"
+                    app:max_value="99"
+                    app:min_value="10"
+                    app:picker_corner_radius="10"
+                    app:pickers_background_color="#757575"
+                    app:swipe_enabled="false"
+                    app:value="45"
+                    app:value_background_color="#494949"
+                    app:value_text_color="@android:color/white" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

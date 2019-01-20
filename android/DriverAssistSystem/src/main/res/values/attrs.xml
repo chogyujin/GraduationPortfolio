@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircularProgressBar">
+        <attr name="cpb_hasShadow" format="boolean"/>
+        <attr name="cpb_progressColor" format="string"/>
+        <attr name="cpb_backgroundColor" format="string"/>
+        <attr name="cpb_title" format="string"/>
+        <attr name="cpb_titleColor" format="string"/>
+        <attr name="cpb_subtitle" format="string"/>
+        <attr name="cpb_subtitleColor" format="string"/>
+        <attr name="cpb_strokeWidth" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="SnakeView">
+        <attr name="strokeColor" format="color" />
+        <attr name="fillColor" format="color" />
+        <attr name="strokeWidth" format="dimension" />
+        <attr name="minValue" format="float" />
+        <attr name="maxValue" format="float" />
+        <attr name="maximumNumberOfValues" format="integer" />
+        <attr name="animationDuration" format="integer" />
+        <attr name="scaleMode">
+            <enum name="fixed" value="0" />
+            <enum name="auto" value="1" />
+        </attr>
+        <attr name="chartStyle">
+            <enum name="stroke" value="0" />
+            <enum name="fill" value="1" />
+            <enum name="fill_stroke" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="StepperTouch">
+        <!-- Styleable colors -->
+        <attr name="stepperBackgroundColor" format="reference"/>
+        <attr name="stepperButtonColor" format="reference"/>
+        <attr name="stepperActionsColor" format="reference"/>
+        <attr name="stepperActionsDisabledColor" format="reference"/>
+        <attr name="stepperTextColor" format="reference"/>
+
+        <!-- Styleable dimensions -->
+        <attr name="stepperTextSize" format="dimension"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="ClickNumberPicker">
+
+        <!--current picker value. Default is 0 -->
+        <attr name="value" format="float"/>
+
+        <!--Min picker value. Default is 0 -->
+        <attr name="min_value" format="float"/>
+
+        <!--Max picker value. Default is 100 -->
+        <attr name="max_value" format="float"/>
+
+        <!-- Step value. Default is 1 -->
+        <attr name="step" format="float"/>
+
+        <!-- Round value after comma. Default is 2 -->
+        <attr name="decimal_number" format="integer"/>
+
+        <!-- If current value is integer, show it without fraction part. Default is false -->
+        <attr name="integer_priority" format="boolean"/>
+
+        <!-- Value background color -->
+        <attr name="value_background_color" format="color"/>
+
+        <!-- Pickers background color -->
+        <attr name="pickers_background_color" format="color"/>
+
+        <!-- Flag to allow swipe animation. Default is false -->
+        <attr name="swipe_animation" format="boolean"/>
+
+        <!-- Flag to turn on or off value change up animation. Default is false -->
+        <attr name="value_animation_up" format="boolean"/>
+
+        <!-- Flag to turn on or off value change down animation. Default is false -->
+        <attr name="value_animation_down" format="boolean"/>
+
+        <!-- Duration of animation down -->
+        <attr name="animation_value_down_duration" format="integer"/>
+
+        <!-- Duration of animation up -->
+        <attr name="animation_value_up_duration" format="integer"/>
+
+        <!-- Value text color -->
+        <attr name="value_text_color" format="color"/>
+
+        <!-- Value text size -->
+        <attr name="value_text_size" format="dimension"/>
+
+        <!-- Value text min size for animation down -->
+        <attr name="value_min_text_size" format="dimension"/>
+
+        <!-- Value text max size for animation up -->
+        <attr name="value_max_text_size" format="dimension"/>
+
+        <!--enable or disable swipe gestures, default is true -->
+        <attr name="swipe_enabled" format="boolean"/>
+
+        <!-- Offset value for swiping animation -->
+        <attr name="value_view_offset" format="float"/>
+
+        <!-- Pickers corner radius-->
+        <attr name="picker_corner_radius" format="float"/>
+
+        <!-- Pickers border stroke width -->
+        <attr name="picker_border_stroke_width" format="integer"/>
+
+        <!-- Pickers border stroke color -->
+        <attr name="picker_border_stroke_color" format="color"/>
+
+        <!-- Animation offset left duration -->
+        <attr name="animation_offset_left_duration" format="integer"/>
+
+        <!-- Animation offset right duration -->
+        <attr name="animation_offset_right_duration" format="integer"/>
+
+        <!-- Left picker layout -->
+        <attr name="left_picker_layout" format="reference"/>
+
+        <!-- Right picker layout -->
+        <attr name="right_picker_layout" format="reference"/>
+
+    </declare-styleable>
+
+
+
+
+</resources>

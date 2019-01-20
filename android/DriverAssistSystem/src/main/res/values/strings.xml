@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">GOD</string>
+    <string name="shimmer">Shimmer</string>
+    <string name="toggle_animation">Toggle animation</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="dummy_email">jondoe@gmail.com</string>
+    <string name="dummy_password">123456789</string>
+    <string name="Sign_in">Sign in</string>
+    <string name="Success">Success</string>
+    <string name="Loading">Loading..</string>
+    <string name="Question">How are you?</string>
+    <string name="Send">Send</string>
+    <string name="Done">Done</string>
+    <string name="Upload">Upload</string>
+    <string name="Beautiful_Picture">Beautiful Picture</string>
+    <string name="Uploading">Uploading</string>
+    <string name="Loading_Complete">Loading Complete, button is disabled</string>
+
+    <string name="STR_SAVE">저장</string>
+    <string name="STR_CANCEL">취소</string>
+    <string name="STR_CLOSE">닫기</string>
+    <string name="STR_NORMAL">정상</string>
+    <string name="STR_UNNORMAL">불량</string>
+    <string name="image">image</string>
+    <string name="title_activity_status">StatusActivity</string>
+    <string name="title_activity_camera">CameraActivity</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="title_activity_history">HistoryActivity</string>
+    <string name="STR_STATUS_AIR_TEMP">대기 온도</string>
+    <string name="STR_STATUS_AIR_HUMID">대기 습도</string>
+    <string name="STR_STATUS_LIGHT">현장 시간</string>
+    <string name="STR_SETTING_TIME">시간 설정</string>
+    <string name="STR_SETTING_PERIOD">주기 설정</string>
+    <string name="STR_EVERYDAY">매일마다</string>
+    <string name="STR_PER_2_DAYS">2일 마다</string>
+    <string name="STR_PER_3_DAYS">3일 마다</string>
+    <string name="STR_WATER_SUPPLY">펌프</string>
+    <string name="STR_WATER_FAN">Fan</string>
+    <string name="STR_WATER_MOTOR">Motor</string>
+    <string name="STR_WATER_LED">LED</string>
+    <string name="STR_SENSOR_TEMP">온도센서</string>
+    <string name="STR_SENSOR_HUMID">습도센서</string>
+    <string name="STR_SENSOR_LIGHT">조도센서</string>
+    <string name="STR_SETTING_CONFIRM">반영</string>
+    <string name="STR_SETTING_CANCEL">취소</string>
+    <string name="STR_HISTORY">이벤트 로그</string>
+
+    <array name="sample_list">
+        <item>Action Button Progress sample</item>
+        <item>Action Button Endless Progress sample</item>
+        <item>Submit Button Progress sample</item>
+        <item>Generate Button Progress sample</item>
+        <item>Button State sample</item>
+    </array>
+
+
+
+</resources>
