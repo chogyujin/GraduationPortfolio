@@ -17,3 +17,8 @@ IoT를 차량 내부에 접목하여 운전자가 안전하고 편하게 운전�
 
 ## 주요 기능
 #### 1. 개인화
+<div>
+<img src="https://user-images.githubusercontent.com/33562226/51518301-cdcd7a80-1e60-11e9-855f-f202ec0d7d9f.PNG" width="550" height="350">
+     
+<img src="https://user-images.githubusercontent.com/33562226/51518297-cc03b700-1e60-11e9-8a5f-423f0927249a.png" width="180" height="350">
+</div>
