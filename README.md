@@ -10,4 +10,4 @@ IoT를 차량 내부에 접목하여 운전자가 안전하고 편하게 운전�
 * 정확한 Sensing을 위해 개인의 신체나 건강상태 등에 맞춰 서비스를 제공합니다.
 
 ## 시스템구성도
-<img src="https://user-images.githubusercontent.com/33562226/51516344-7e844b80-1e5a-11e9-9ae8-237cf1b52dd9.PNG" width="700" height="320">
+<img src="https://user-images.githubusercontent.com/33562226/51516598-4f220e80-1e5b-11e9-8229-41130ff5a520.PNG" width="800" height="320">
