@@ -3,7 +3,7 @@
 *  File : facealldetect.cpp                   				*
 *  Make : 2017 iot home graduation team					*
 *  Date : 2017/8/29							*
-*  made by JS								*
+*  made by GJ								*
 *  2017/9/7 - patch for piCam						*
 *									*
 ************************************************************************/
