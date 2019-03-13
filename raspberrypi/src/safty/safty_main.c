@@ -585,22 +585,18 @@ void *ClientRecv(void *vp)
 
 		switch (_message->_command) {
 			case GET_STATUS:
-				//printf("[Cli]GET_STATUS\n");
 				iRet = sprintf(ucSBuff, "%d|%d|%d,%d,%d,%d,%d,%d", _message->_apptype, _message->_command, (int)userState->temperature, (int)userState->humid, userState->pulse, userState->one_Count, (dangerStep >= 3)?0:dangerStep, (dangerStep==3)?1:0 );  
 				write(stMyInfo.iSock, ucSBuff, iRet);
 				break;
 	
 			case GET_HEALTH:
-				//printf("[Cli]GET_HEALTH\n");
 				memcpy(&driverState->id, (void*)&id.id, sizeof(char)*20);
 				get_health(driverState);
-				//printf("[Cli][SNDMSG]id:%s, name:%s, age:%d, sex:%s, disease:%s\n",driverState->id, driverState->name, driverState->age, driverState->sex, driverState->disease);
 				iRet = sprintf(ucSBuff, "%d|%d|%s,%s,%s,%s", _message->_apptype, _message->_command, driverState->name, driverState->age, driverState->sex, driverState->disease);
 				write(stMyInfo.iSock, ucSBuff, iRet);
 				break;
 
 			case SET_HEALTH:
-				//printf("[Cli]SET_HEALTH\n");
 				memset(_data, 0x0, sizeof(DataSTR));
 				iRet = parse_data_str(_message->_data, _data);
 				memcpy(driverState->name, _data->_data1, sizeof(char)*20);
@@ -610,11 +606,9 @@ void *ClientRecv(void *vp)
 				memcpy(driverState->id, &id.id, sizeof(char)*20);
 				set_health(driverState);
 				reflectHealth();
-
 				iRet = sprintf(ucSBuff, "%d|%d", _message->_apptype, _message->_command);
 				write(stMyInfo.iSock, ucSBuff, iRet);
 				break;
-
 			case UPDATE_USER :
 				memcpy(&userStandard->id, (void*)&id.id, sizeof(char)*20);
 				updateUserDat(userStandard->id);
@@ -622,28 +616,19 @@ void *ClientRecv(void *vp)
 				write(stMyInfo.iSock, ucSBuff, iRet);
 				break;
 			case GET_HISTORY:
-				//printf("[Cli]GET_HISTORY\n");
-				
 				memcpy(&driverState->id, (void*)&id.id, sizeof(char)*20);
 				get_health(driverState);
-
 				memcpy(&emergency->id, (void*)&id.id, sizeof(char)*20);
 				get_emergency(emergency);
-				//printf("[Cli][SNDMSG]ID:%s, Name:%s, number:%s, relation:%s\n",emergency->id, emergency->name, emergency->number, emergency->relation);
-				// end of make stub
 				iRet = sprintf(ucSBuff, "%d|%d|%s,%s,%s,%s,%s,%s,%s,%s", _message->_apptype, _message->_command, driverState->name, driverState->age, driverState->sex, driverState->disease, emergency->name, emergency->number, emergency->relation);
 				write(stMyInfo.iSock, ucSBuff, iRet);
-				
 				break;
-
 			case CONFIRM_ID:
-				//printf("[Cli]CONFIRM_ID\n");
 				memset(_data, 0x0, sizeof(DataSTR));
 				iRet = parse_data_str(_message->_data, _data);
 				memcpy((void*)&id.id, _data->_data1, sizeof(char)*20);
 				memcpy((void*)&id.password, _data->_data2, sizeof(char)*20);
 				iRet = confirm_id(&id);
-				//printf("[CliRev]Confirm Result:%d\n",iRet);
 				memcpy(&userStandard->id, (void*)&id.id, sizeof(char)*20);
 				get_userstandard(userStandard);
 				if(iRet == 1){
@@ -656,7 +641,6 @@ void *ClientRecv(void *vp)
 				break;
 
 			case JOIN_ID:
-				//printf("[Cli]JOIN_ID\n");
 				memset(_data, 0x0, sizeof(DataSTR));
 				iRet = parse_data_str(_message->_data, _data);
 				memcpy((void*)&id.id, _data->_data1, sizeof(char)*20);
@@ -667,10 +651,8 @@ void *ClientRecv(void *vp)
 				break;
 
 			case GET_PHONE_NUM:
-				//printf("[Cli]GET_PHONE_NUM\n");
 				memcpy(&emergency->id, (void*)&id.id, sizeof(char)*20);
 				get_emergency(emergency);
-
 				iRet = sprintf(ucSBuff, "%d|%d|%s,%s,%s", _message->_apptype, _message->_command, emergency->name, emergency->number, emergency->relation);
 				write(stMyInfo.iSock, ucSBuff, iRet);
 				break;
