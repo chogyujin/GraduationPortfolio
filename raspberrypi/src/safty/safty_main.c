@@ -3,7 +3,7 @@
 *								*
 * file creation : 2017/7/31					*
 * team : 2017 iot_smart home graduation team			*
-* made by js							*
+* made by gj							*
 *								*
 * 2017/8/1 - code clean up					*
 *								*
