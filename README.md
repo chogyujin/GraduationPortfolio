@@ -14,6 +14,7 @@ IoT를 차량 내부에 접목하여 운전자가 안전하고 편하게 운전�
 <img src="https://user-images.githubusercontent.com/33562226/51516598-4f220e80-1e5b-11e9-8229-41130ff5a520.PNG" width="800" height="380">
 
 ## 3. 안드로이드 구성도
+<img src = "https://user-images.githubusercontent.com/33562226/57002671-03ba9180-6bfc-11e9-9896-201a5b49a32b.png">  
 
 <img src="https://user-images.githubusercontent.com/33562226/51517464-323b0a80-1e5e-11e9-924a-e865b7a0010f.PNG" width="900" height="450">
 
